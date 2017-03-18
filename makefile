@@ -4,7 +4,7 @@ N?=0
 F?=./foo
 
 new:
-	../main.exe --output_multi --min_idt 0.70 --min_cov 1 --max_n_read 20000 --n_core $N >| cnew.fasta < $F
+	../consensus/main.exe --output_multi --min_idt 0.70 --min_cov 1 --max_n_read 20000 --n_core $N >| cnew.fasta < $F
 go:
 	../go-consensus --output_multi --min_idt 0.70 --min_cov 1 --max_n_read 20000 --n_core $N >| cnew.fasta < $F
 old:
